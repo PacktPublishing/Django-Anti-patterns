@@ -19,17 +19,17 @@ def book_list(request):
 
 # book_list.html
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Book List</title>
-</head>
-<body>
-    <h1>Book List</h1>
-    <ul>
-        {% for book in books %}
-            <li>{{ book.title }} by {{ book.author.name }}</li>
-        {% endfor %}
-    </ul>
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Book List</title>
+    </head>
+    <body>
+        <h1>Book List</h1>
+        <ul>
+            {% for book in books %}
+                <li>{{ book.title }} by {{ book.author.name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
 </html>
