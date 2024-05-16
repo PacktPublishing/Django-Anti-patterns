@@ -1,0 +1,19 @@
+<!-- Bad --> 
+
+{% for item in queryset %} 
+
+    {% if item.is_active %} 
+
+        <div>{{ item.name }}</div> 
+
+    {% endif %} 
+
+{% endfor %} 
+
+<!-- Better --> 
+
+{% for item in active_items %} 
+
+    <div>{{ item.name }}</div> 
+
+{% endfor %} 
