@@ -1,0 +1,11 @@
+<!-- Bad --> 
+
+{% with result=obj.some_long_method_call %} 
+
+    {{ result.attribute }} 
+
+{% endwith %} 
+
+<!-- Better --> 
+
+{{ obj.some_long_method_call.attribute }} 
