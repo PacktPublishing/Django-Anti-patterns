@@ -1,0 +1,15 @@
+<!-- Bad --> 
+
+{% if user.is_authenticated and user.profile.is_premium %} 
+
+    Welcome, Premium User! 
+
+{% endif %} 
+
+<!-- Better --> 
+
+{% if user.profile.is_premium %} 
+
+    Welcome, Premium User! 
+
+{% endif %} 
